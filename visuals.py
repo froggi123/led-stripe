@@ -16,5 +16,6 @@ import math
 def led_position(strip,color=(90,90,90),position=0,size=1):
     """turn on LED at desired position"""
     strip.setPixelColor(position, color)
+    strip.setPixelColor(position+1, color)
     strip.show()
         
