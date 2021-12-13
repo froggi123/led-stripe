@@ -13,7 +13,7 @@ import math
 
 # Define functions which animate LEDs in various ways.
               
-def led_position(strip,color=(90,90,90),position=0,size=1):
+def led_position(strip,color=(90,90,90),position=0,size=1,show=True):
     """turn on LED at desired position"""
     strip.setPixelColor(position, color)
     strip.setPixelColor(position+1, color) # additional line to test commit and push
